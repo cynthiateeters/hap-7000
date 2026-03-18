@@ -13,7 +13,7 @@ Every rule configured in this project's `.eslintrc.json`, explained with example
 Fails:
 
 ```js
-const result = eval("2 + 2");
+const result = eval('2 + 2');
 ```
 
 Passes:
@@ -33,13 +33,13 @@ const result = 2 + 2;
 Fails:
 
 ```js
-var name = "Kit";
+var name = 'Kit';
 ```
 
 Passes:
 
 ```js
-const name = "Kit";
+const name = 'Kit';
 ```
 
 ---
@@ -53,14 +53,14 @@ const name = "Kit";
 Fails:
 
 ```js
-let greeting = "hello";
+let greeting = 'hello';
 // greeting is never reassigned
 ```
 
 Passes:
 
 ```js
-const greeting = "hello";
+const greeting = 'hello';
 ```
 
 Also passes (because `count` is reassigned):
@@ -81,7 +81,7 @@ count += 1;
 Warns:
 
 ```js
-console.log("debug value:", x);
+console.log('debug value:', x);
 ```
 
 Fix: Remove the `console.log` once you are done debugging.
